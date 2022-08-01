@@ -22,16 +22,19 @@ nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <silent><leader><tab> <cmd>BufferLineCycleNext<CR>
+
 nnoremap <silent><S-tab> <cmd>BufferLineCyclePrev<CR>
 
 "--run executable file"
 nnoremap <silent><leader>ru <cmd>!./%:r<cr>
+nnoremap <silent><F9>:w <bar> <cmd> make %<CR>
 nnoremap <silent><C-\> <cmd>cd%:h<CR> 
-
+nnoremap <silent><F8><cmd>Trouble<CR> 
 
 "---Lsp stuff-- 
 nnoremap <silent><C-h> <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent><C-G> :lua vim.lsp.buf.definition()<CR>
+nnoremap <silent><leader>ca <cmd>CodeActionMenu<CR>
 
 
 

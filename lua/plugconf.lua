@@ -26,7 +26,8 @@ Plug ('folke/tokyonight.nvim', {[ 'branch']= 'main' })
 Plug 'EdenEast/nightfox.nvim'
 Plug 'joshdick/onedark.vim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'tjdevries/express_line.nvim'
+Plug 'sainnhe/everforest'
+Plug 'nvim-lualine/lualine.nvim'
 --miscellanious
 Plug 'folke/trouble.nvim'
 Plug 'numToStr/Comment.nvim'
@@ -56,3 +57,4 @@ vim.call('plug#end')
 --indent blankline
 --undotree
 --nvim-tree
+--tjdveries-express line
