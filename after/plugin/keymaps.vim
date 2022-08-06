@@ -29,7 +29,7 @@ nnoremap <silent><S-tab> <cmd>BufferLineCyclePrev<CR>
 nnoremap <silent><leader>ru <cmd>!./%:r<cr>
 nnoremap <silent><F9>:w <bar> <cmd> make %<CR>
 nnoremap <silent><C-\> <cmd>cd%:h<CR> 
-nnoremap <silent><F8><cmd>Trouble<CR> 
+"nnoremap <silent><F8><cmd>Trouble<CR> 
 
 "---Lsp stuff-- 
 nnoremap <silent><C-h> <cmd>lua vim.lsp.buf.hover()<CR>

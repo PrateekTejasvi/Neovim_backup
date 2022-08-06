@@ -35,7 +35,7 @@ vim.cmd[[
 	filetype on
 	filetype indent on
 	filetype plugin indent on
-    colorscheme onedark
+    colorscheme everforest
 
 ]]
 
