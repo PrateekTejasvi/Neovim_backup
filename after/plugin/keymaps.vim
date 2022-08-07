@@ -9,6 +9,7 @@ nnoremap <leader>fh <cmd>Telescope oldfiles<CR>
 nnoremap <leader>gc <cmd>Telescope git_commits<CR>
 nnoremap <leader>: <cmd>Telescope command_history<CR>
 nnoremap <leader>r <cmd> Telescope registers <CR>
+nnoremap <leader>c <cmd>Telescope colorscheme<CR>
 
 "--Telescope custom functions
 nnoremap <silent><leader>i :lua require('config_tele').search_config()<CR>
