@@ -16,9 +16,7 @@ require'lspconfig'.tsserver.setup{}
 require'lspconfig'.arduino_language_server.setup{
 
     cmd = {
-        "arduino-language-server",
-        "-cli-config", "/home/prateek/.arduino15/arduino-cli.yaml",
-        "clangd","/usr/lib/clang"
+        "./arduino-language-server ",
     },
 
 }
