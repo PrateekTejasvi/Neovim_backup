@@ -9,7 +9,6 @@ nnoremap <leader>fh <cmd>Telescope oldfiles<CR>
 nnoremap <leader>gc <cmd>Telescope git_commits<CR>
 nnoremap <leader>: <cmd>Telescope command_history<CR>
 nnoremap <leader>r <cmd> Telescope registers <CR>
-nnoremap <leader>c <cmd>Telescope colorscheme<CR>
 
 "--Telescope custom functions
 nnoremap <silent><leader>i :lua require('config_tele').search_config()<CR>
@@ -17,7 +16,7 @@ nnoremap <silent><leader>p :lua require('config_tele').search_programs()<CR>
 nnoremap <silent><leader>fi :lua require('config_tele').search_word()<CR>
 nnoremap <silent><leader>e :lua require'telescope'.extensions.file_browser.file_browser()<CR>
 
-"-------switch between ficd les 
+"-------switch between windows(splits) 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>k :wincmd k<CR>
@@ -30,7 +29,6 @@ nnoremap <silent><S-tab> <cmd>BufferLineCyclePrev<CR>
 nnoremap <silent><leader>ru <cmd>!./%:r<cr>
 nnoremap <silent><F9>:w <bar> <cmd> make %<CR>
 nnoremap <silent><C-\> <cmd>cd%:h<CR> 
-"nnoremap <silent><F8><cmd>Trouble<CR> 
 
 "---Lsp stuff-- 
 nnoremap <silent><C-h> <cmd>lua vim.lsp.buf.hover()<CR>
