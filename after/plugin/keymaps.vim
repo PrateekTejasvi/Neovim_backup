@@ -27,7 +27,7 @@ nnoremap <silent><S-tab> <cmd>BufferLineCyclePrev<CR>
 
 "--run executable file"
 nnoremap <silent><leader>ru <cmd>!./%:r<cr>
-nnoremap <silent><F9>:w <bar> <cmd> make %<CR>
+nnoremap <silent><F9> <cmd> make %<CR>
 nnoremap <silent><C-\> <cmd>cd%:h<CR> 
 
 "---Lsp stuff-- 

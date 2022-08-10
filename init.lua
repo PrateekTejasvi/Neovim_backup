@@ -13,15 +13,15 @@ require'lspconfig'.pyright.setup{}
 require'lspconfig'.sumneko_lua.setup{
 }
 require'lspconfig'.tsserver.setup{}
-require'lspconfig'.arduino_language_server.setup{
-
-    cmd = {
-        "./arduino-language-server ",
-    },
-
+require'lspconfig'.arduino_language_server.setup {
+  cmd = {
+    "arduino-language-server",
+    "-cli-config", "~/.arduino15/arduino-cli.yaml",
+    "-fqbn", "arduino:avr:nano:cpu=atmega328old",
+    "-cli", "arduino-cli",
+    "-clangd", "clangd"
+  }
 }
-local opts = {noremap = true,silent=true},
----@diagnostic disable-next-line: redundant-value
 require'lspconfig'.clangd.setup{
 
     on_attach = function ()
@@ -33,7 +33,7 @@ vim.cmd[[
 	filetype on
 	filetype indent on
 	filetype plugin indent on
-    colorscheme everforest
+    colorscheme tokyonight
 
 ]]
 
