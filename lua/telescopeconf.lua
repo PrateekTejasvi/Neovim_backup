@@ -9,7 +9,7 @@ require('telescope').setup{
     },
 
 defaults = {
-    file_ignore_patterns = {"pkg/","Arduino/","Pictures/","plugged/",".git/",".exe",".elf",".out","python/","go/","node_modules/"},
+    file_ignore_patterns = {"pkg/","Arduino/","Pictures/","plugged/",".git/",".exe",".elf",".out","python/","go/","node_modules/","/Joplin","/alacritty",},
     i = {
         ["<C-h>"] = "hidden=true"
     }
@@ -28,7 +28,7 @@ extensions = {
              mappings = {
                  ["i"] = {
                      -- your custom insert mode mappings
-                    ['<C-n>'] = require"telescope".extensions.file_browser.actions_create_file
+                    ['<C-r>'] = require"telescope".extensions.file_browser.actions_create_file
                  },
                  ["n"] = {
                      -- your custom normal mode mappings

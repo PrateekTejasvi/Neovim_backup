@@ -6,12 +6,12 @@ vim.call('plug#begin','~/.config/nvim/plugged')
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-treesitter/playground'
---telescope
+--Telescope
 Plug 'nvim-telescope/telescope.nvim'
 Plug ('nvim-telescope/telescope-fzf-native.nvim', {[ 'do'] =  'make' })
 Plug ('nvim-treesitter/nvim-treesitter', {['do']= ':TSUpdate'} )
 Plug "nvim-telescope/telescope-file-browser.nvim"
---lsp stuff
+--LSP
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
@@ -20,7 +20,7 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'neovim/nvim-lspconfig'
---themes
+--THEMES
 Plug 'akinsho/bufferline.nvim'
 Plug ('folke/tokyonight.nvim', {[ 'branch']= 'main' })
 Plug 'EdenEast/nightfox.nvim'
@@ -28,12 +28,13 @@ Plug 'joshdick/onedark.vim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'sainnhe/everforest'
 Plug 'nvim-lualine/lualine.nvim'
---miscellanious
-Plug 'folke/trouble.nvim'
+
+--OTHER PLUGINS
 Plug 'numToStr/Comment.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'numToStr/FTerm.nvim'
 Plug 'weilbith/nvim-code-action-menu'
+
 vim.call('plug#end')
 
 -- Deleted plugins
