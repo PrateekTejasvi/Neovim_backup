@@ -1,5 +1,4 @@
-nnoremap <leader>t <cmd>lua require('FTerm').toggle()<CR>
-
+nnoremap <leader>t <cmd>lua require('FTerm').toggle()<CR> 
 "---just normal telescope keybinds 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
@@ -14,6 +13,7 @@ nnoremap <leader>r <cmd> Telescope registers <CR>
 nnoremap <silent><leader>i :lua require('config_tele').search_config()<CR>
 nnoremap <silent><leader>p :lua require('config_tele').search_programs()<CR>
 nnoremap <silent><leader>fi :lua require('config_tele').search_word()<CR>
+nnoremap <silent><leader>df :lua require('config_tele').search_dotfiles()<CR>
 nnoremap <silent><leader>e :lua require'telescope'.extensions.file_browser.file_browser()<CR>
 
 "-------switch between windows(splits) 
@@ -34,8 +34,6 @@ nnoremap <silent><C-\> <cmd>cd%:h<CR>
 nnoremap <silent><C-h> <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent><C-G> :lua vim.lsp.buf.definition()<CR>
 nnoremap <silent><leader>ca <cmd>CodeActionMenu<CR>
-
-
 
 "---------need to work on this upload---------------------
 " autocmd filetype cpp map <leader>r :!%:r<CR>

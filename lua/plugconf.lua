@@ -27,7 +27,11 @@ Plug 'EdenEast/nightfox.nvim'
 Plug 'joshdick/onedark.vim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'sainnhe/everforest'
+Plug 'projekt0n/github-nvim-theme'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'folke/lsp-colors.nvim'
+Plug ('shaunsingh/oxocarbon.nvim', {[ 'do']= './install.sh' })
+
 
 --OTHER PLUGINS
 Plug 'numToStr/Comment.nvim'
