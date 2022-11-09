@@ -16,6 +16,7 @@ nnoremap <silent><leader>fi :lua require('config_tele').search_word()<CR>
 nnoremap <silent><leader>df :lua require('config_tele').search_dotfiles()<CR>
 nnoremap <silent><leader>e :lua require'telescope'.extensions.file_browser.file_browser()<CR>
 
+
 "-------switch between windows(splits) 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>l :wincmd l<CR>
