@@ -28,8 +28,11 @@ cmd[[
 
 --mapleader key
 vim.g.mapleader=" "
+vim.g.toggle_theme_icon = "   "
+vim.g.theme_switcher_loaded = false
 
 --options
+opt.shortmess:append "sI"
 opt.syntax='on'
 opt.relativenumber=true
 opt.number=true
