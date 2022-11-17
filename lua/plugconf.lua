@@ -39,10 +39,13 @@ Plug 'mhinz/vim-startify'
 Plug 'numToStr/Comment.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'NvChad/nvterm'
+Plug 'https://github.com/NvChad/ui.git'
 --Plug 'numToStr/FTerm.nvim'
 Plug 'weilbith/nvim-code-action-menu'
 
 vim.call('plug#end')
+
+
 
 
 
