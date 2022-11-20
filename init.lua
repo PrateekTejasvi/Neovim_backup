@@ -39,8 +39,10 @@ vim.cmd[[
 	filetype on
 	filetype indent on
 	filetype plugin indent on
-    colorscheme onedark
-
+    colorscheme github_dark
+    if argc() == 0 
+        autocmd VimEnter * :lua require'telescope'.extensions.file_browser.file_browser()
+    endif
 ]]
 
 

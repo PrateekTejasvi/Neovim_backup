@@ -31,9 +31,6 @@ Plug 'projekt0n/github-nvim-theme'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'folke/lsp-colors.nvim'
 Plug ('shaunsingh/oxocarbon.nvim', {[ 'do']= './install.sh' })
-Plug 'mhinz/vim-startify'
-
-
 
 --OTHER PLUGINS
 Plug 'numToStr/Comment.nvim'
