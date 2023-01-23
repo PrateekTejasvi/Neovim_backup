@@ -21,10 +21,12 @@ Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'neovim/nvim-lspconfig'
 --THEMES
+Plug 'rebelot/kanagawa.nvim'
 Plug 'akinsho/bufferline.nvim'
 Plug ('folke/tokyonight.nvim', {[ 'branch']= 'main' })
 Plug 'EdenEast/nightfox.nvim'
 Plug 'joshdick/onedark.vim'
+Plug 'olimorris/onedarkpro.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'sainnhe/everforest'
 Plug 'projekt0n/github-nvim-theme'
@@ -36,9 +38,12 @@ Plug ('shaunsingh/oxocarbon.nvim', {[ 'do']= './install.sh' })
 Plug 'numToStr/Comment.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'NvChad/nvterm'
-Plug 'https://github.com/NvChad/ui.git'
---Plug 'numToStr/FTerm.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'weilbith/nvim-code-action-menu'
+
+
+-- #Plug 'NvChad/ui.git'
+--Plug 'numToStr/FTerm.nvim'
 
 vim.call('plug#end')
 
@@ -64,7 +69,6 @@ vim.call('plug#end')
 --which-key
 --vim-arline
 --galaxyline
---indent blankline
 --undotree
 --nvim-tree
 --tjdveries-express line

@@ -1,3 +1,4 @@
+require('cmpconfig')
 require('lsp_config')
 require('plugconf')
 require("bufferline").setup{}
@@ -8,9 +9,6 @@ require('config_tele')
 require('statusline')
 require('telescopeconf')
 require('treesitterconf')
-
-
-
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.sumneko_lua.setup{
 }
@@ -32,6 +30,27 @@ require'lspconfig'.clangd.setup{
     end
 }
 
+require'lspconfig'.rust_analyzer.setup{}
+vim.opt.list = true
+vim.opt.listchars:append "space:⋅"
+vim.opt.listchars:append "eol:↴"
+
+require("indent_blankline").setup {
+    space_char_blankline = " ",
+    show_current_context = true,
+    show_current_context_start = true,
+}
+
+require('onedarkpro').setup({
+  dark_theme = "onedark_vivid", -- The default dark theme
+  light_theme = "onelight", -- The default light theme
+  highlight = {
+      variables = "italic"
+  }
+})
+
+
+
 
 
 vim.cmd[[
@@ -39,7 +58,7 @@ vim.cmd[[
 	filetype on
 	filetype indent on
 	filetype plugin indent on
-    colorscheme github_dark
+    colorscheme kanagawa
     if argc() == 0 
         autocmd VimEnter * :lua require'telescope'.extensions.file_browser.file_browser()
     endif
