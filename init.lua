@@ -23,12 +23,12 @@ require'lspconfig'.arduino_language_server.setup {
     "-clangd", "clangd"
   }
 }
-require'lspconfig'.clangd.setup{
-
-    on_attach = function ()
-       -- vim.api.nvim_buf_set_keymap("n","K",'<cmd>vim.lsp.buf.hover()<CR>',opts)
-    end
-}
+-- require'lspconfig'.clangd.setup{
+--
+--     on_attach = function ()
+--        -- vim.api.nvim_buf_set_keymap("n","K",'<cmd>vim.lsp.buf.hover()<CR>',opts)
+--     end
+-- }
 
 require'lspconfig'.rust_analyzer.setup{}
 vim.opt.list = true
